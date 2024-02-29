@@ -1,9 +1,16 @@
 <script>
-export default {
+import AppNav from './components/AppNav.vue';
 
+
+export default {
+    components: {
+        AppNav,
+    }
 }
 </script>
 
-<template></template>
+<template>
+    <AppNav></AppNav>
+</template>
 
 <style></style>
