@@ -54,6 +54,7 @@ export default {
     .list-icon {
         display: flex;
 
+        padding-inline: 60px;
         gap: 120px;
 
         margin: auto;
