@@ -33,8 +33,8 @@ nav {
     height: 118px;
 
     #logo {
-        width: 80px;
-        height: auto;
+        // width: 80px;
+        height: 100%;
         padding: 18px;
     }
 
