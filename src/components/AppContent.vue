@@ -95,14 +95,21 @@ export default {
         <div class="jumbotron">
             <img src="/img/jumbotron.jpg" alt="">
         </div>
-
+        
         <div class="comics-list">
+            <div class="current-series">
+                Current Series
+            </div>
             <ComicItem 
                 v-for="currentComic in comics" 
                 :comicName="currentComic.series" 
                 :comicImage="currentComic.thumb"
             >
             </ComicItem>
+
+            <button class="btn">
+                Load more
+            </button>
         </div>
 
     </main>
@@ -120,14 +127,40 @@ export default {
     .comics-list {
         display: flex;
         flex-flow: row wrap;
+        justify-content: center;
 
-        height: 670px;
+        position: relative;
+
+        // height: 670px;
     
         padding: 52px 30px;
         gap: 50px 27px;
     
         color: white;
-        background-color: #1c1c1c;        
+        background-color: #1c1c1c;
+        
+        .current-series {
+            position: absolute;
+            top: -27px;
+            left: 0;
+
+            background-color: #0282f9;
+
+            padding: 15px 30px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .btn {
+            padding: 13px 60px;
+            
+            text-transform: uppercase;
+            font-weight: bold;
+            
+            border: none;
+            background-color: #0282f9;
+            color: white;
+        }
     }
 }
 </style>
